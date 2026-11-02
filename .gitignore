@@ -1,0 +1,6 @@
+node_modules/
+.env
+web/data.js
+web/config.js
+web/_redirects
+.DS_Store

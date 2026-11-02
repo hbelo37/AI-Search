@@ -1,0 +1,2069 @@
+{
+ "filters": {
+  "seniority": {
+   "name": "Seniority Level",
+   "mode": "",
+   "selection": "Multi",
+   "operators": "Include, Exclude",
+   "incexc": "Include + Exclude"
+  },
+  "department": {
+   "name": "Department",
+   "mode": "Function › Sub-function",
+   "selection": "Multi (hierarchical)",
+   "operators": "Include (select / deselect sub-functions)",
+   "incexc": "Include only"
+  },
+  "location_lead": {
+   "name": "Location",
+   "mode": "Lead › By Region",
+   "selection": "Multi",
+   "operators": "Include, Exclude",
+   "incexc": "Include + Exclude"
+  },
+  "location_lead_postal": {
+   "name": "Location",
+   "mode": "Lead › By Postal Code",
+   "selection": "Multi codes + Single radius",
+   "operators": "Include",
+   "incexc": "Include only"
+  },
+  "location_hq": {
+   "name": "Global HQ Location",
+   "mode": "By Region (Leads: Location › Global HQ Location tab; Accounts: Global HQ Location)",
+   "selection": "Multi",
+   "operators": "Include, Exclude",
+   "incexc": "Include + Exclude"
+  },
+  "location_hq_postal": {
+   "name": "Global HQ Location",
+   "mode": "By Postal Code",
+   "selection": "Multi codes + Single radius",
+   "operators": "Include",
+   "incexc": "Include only"
+  },
+  "contact_keywords": {
+   "name": "Contact Keywords",
+   "mode": "Scope: Current Job Title / Current Job Description / All Jobs or Bios",
+   "selection": "Multi",
+   "operators": "Include, Exclude",
+   "incexc": "Include + Exclude"
+  },
+  "years_experience": {
+   "name": "Total Years of Experience",
+   "mode": "",
+   "selection": "Single (range)",
+   "operators": "Min, Max",
+   "incexc": "Include only (inferred)"
+  },
+  "years_role": {
+   "name": "Years in Current Role",
+   "mode": "",
+   "selection": "Single (range)",
+   "operators": "Min, Max",
+   "incexc": "Include only (inferred)"
+  },
+  "years_company": {
+   "name": "Years in Current Company",
+   "mode": "",
+   "selection": "Single (range)",
+   "operators": "Min, Max",
+   "incexc": "Include only (inferred)"
+  },
+  "job_changed": {
+   "name": "Job Changed",
+   "mode": "Lead Signals",
+   "selection": "Single",
+   "operators": "Include",
+   "incexc": "Include only"
+  },
+  "promoted": {
+   "name": "Promoted",
+   "mode": "Lead Signals",
+   "selection": "Single",
+   "operators": "Include",
+   "incexc": "Include only"
+  },
+  "persona": {
+   "name": "Persona",
+   "mode": "Workflow",
+   "selection": "Multi",
+   "operators": "Include, Exclude",
+   "incexc": "Include + Exclude"
+  },
+  "lists_lead": {
+   "name": "Lists",
+   "mode": "Lead tab",
+   "selection": "Multi",
+   "operators": "Include, Exclude",
+   "incexc": "Include + Exclude"
+  },
+  "lists_account": {
+   "name": "Lists",
+   "mode": "Account tab (Leads) / Lists (Accounts)",
+   "selection": "Multi",
+   "operators": "Include, Exclude",
+   "incexc": "Include + Exclude"
+  },
+  "data_grade": {
+   "name": "Data Grade",
+   "mode": "",
+   "selection": "Single (range slider)",
+   "operators": "Range (min grade → A+)",
+   "incexc": "N/A"
+  },
+  "exclusions": {
+   "name": "Exclusions",
+   "mode": "",
+   "selection": "Multi",
+   "operators": "Include (each option removes records)",
+   "incexc": "Include only"
+  },
+  "intent_topics": {
+   "name": "Intent › Topics",
+   "mode": "",
+   "selection": "Multi (+ Select all)",
+   "operators": "Include",
+   "incexc": "Include only"
+  },
+  "intent_level": {
+   "name": "Intent › Level",
+   "mode": "",
+   "selection": "Multi (OR)",
+   "operators": "Include",
+   "incexc": "Include only"
+  },
+  "intent_threshold": {
+   "name": "Intent › Topic Threshold",
+   "mode": "",
+   "selection": "Single",
+   "operators": "Include",
+   "incexc": "N/A"
+  },
+  "intent_location": {
+   "name": "Intent › Location",
+   "mode": "",
+   "selection": "Multi (OR)",
+   "operators": "Include",
+   "incexc": "Include only"
+  },
+  "intent_lookback": {
+   "name": "Intent › Lookback Period",
+   "mode": "",
+   "selection": "Single",
+   "operators": "Include",
+   "incexc": "N/A"
+  },
+  "signals_date": {
+   "name": "Account Signals",
+   "mode": "Signal Date Range",
+   "selection": "Single",
+   "operators": "Include",
+   "incexc": "N/A"
+  },
+  "signals_type": {
+   "name": "Account Signals",
+   "mode": "Signal Type",
+   "selection": "Multi (to verify)",
+   "operators": "Include",
+   "incexc": "Include only"
+  },
+  "last_funding_date": {
+   "name": "Last Funding Date",
+   "mode": "",
+   "selection": "Single",
+   "operators": "Include",
+   "incexc": "Include only"
+  },
+  "total_funding_amount": {
+   "name": "Total Funding Amount",
+   "mode": "",
+   "selection": "Single (range)",
+   "operators": "Min ($), Max ($)",
+   "incexc": "Include only (inferred)"
+  },
+  "last_funding_round": {
+   "name": "Last Funding Round",
+   "mode": "",
+   "selection": "Multi",
+   "operators": "Include",
+   "incexc": "Include only"
+  },
+  "total_funding_rounds": {
+   "name": "Total Funding Rounds",
+   "mode": "",
+   "selection": "Single (range)",
+   "operators": "Min, Max",
+   "incexc": "Include only (inferred)"
+  },
+  "is_subsidiary": {
+   "name": "Is Subsidiary",
+   "mode": "",
+   "selection": "Single",
+   "operators": "Include",
+   "incexc": "Include only"
+  },
+  "multinational": {
+   "name": "Multinational Company",
+   "mode": "",
+   "selection": "Single",
+   "operators": "Include",
+   "incexc": "Include only"
+  },
+  "company_keywords": {
+   "name": "Company Keywords",
+   "mode": "",
+   "selection": "Multi",
+   "operators": "Include, Exclude",
+   "incexc": "Include + Exclude"
+  },
+  "tech_product": {
+   "name": "Technographics",
+   "mode": "Technology tab",
+   "selection": "Multi",
+   "operators": "Include",
+   "incexc": "Include only"
+  },
+  "tech_vendor": {
+   "name": "Technographics",
+   "mode": "Vendor tab",
+   "selection": "Multi",
+   "operators": "Include",
+   "incexc": "Include only"
+  },
+  "tech_category": {
+   "name": "Technographics",
+   "mode": "Category tab",
+   "selection": "Multi",
+   "operators": "Include",
+   "incexc": "Include only"
+  },
+  "industry": {
+   "name": "Industry",
+   "mode": "3-level hierarchy",
+   "selection": "Multi (hierarchical)",
+   "operators": "Include, Exclude",
+   "incexc": "Include + Exclude"
+  },
+  "revenue_predef": {
+   "name": "Global Revenue",
+   "mode": "Predefined Range",
+   "selection": "Multi",
+   "operators": "Include",
+   "incexc": "Include only"
+  },
+  "revenue_custom": {
+   "name": "Global Revenue",
+   "mode": "Custom Range",
+   "selection": "Single (range)",
+   "operators": "Min ($M), Max ($M)",
+   "incexc": "Include only"
+  },
+  "headcount_predef": {
+   "name": "Global Headcount",
+   "mode": "Predefined Range",
+   "selection": "Multi",
+   "operators": "Include",
+   "incexc": "Include only"
+  },
+  "headcount_custom": {
+   "name": "Global Headcount",
+   "mode": "Custom Range",
+   "selection": "Single (range)",
+   "operators": "Min, Max",
+   "incexc": "Include only"
+  },
+  "dept_headcount": {
+   "name": "Department Headcount",
+   "mode": "Department + Min/Max",
+   "selection": "Single (one department, one range)",
+   "operators": "Min, Max",
+   "incexc": "Include only"
+  },
+  "founded_year": {
+   "name": "Founded Year",
+   "mode": "Since / Till",
+   "selection": "Single (range)",
+   "operators": "Since, Till",
+   "incexc": "Include only"
+  },
+  "parent_company": {
+   "name": "Parent Company",
+   "mode": "",
+   "selection": "Multi",
+   "operators": "Include (Exclude to verify)",
+   "incexc": "To verify"
+  },
+  "company": {
+   "name": "Company",
+   "mode": "",
+   "selection": "Multi",
+   "operators": "Include, Exclude",
+   "incexc": "Include + Exclude"
+  }
+ },
+ "department": {
+  "Top Management": [
+   "Founder & CEO",
+   "GM / MD",
+   "Board Member"
+  ],
+  "Administration": [
+   "Secretary",
+   "Merger/Acquisition",
+   "Administration - Generic"
+  ],
+  "Legal /Regulatory & Compliance": [
+   "Regulatory & Compliance",
+   "Legal"
+  ],
+  "Accounting and related": [
+   "Accounting",
+   "Audit",
+   "Corporate Tax"
+  ],
+  "Sales": [
+   "Inside Sales/Sales Development",
+   "Account Executive/Management",
+   "Sales - Generic",
+   "Client/Customer Relationship/Engagement",
+   "Regional/Territory",
+   "International/Global",
+   "Business Development/Partnership",
+   "Sales and Marketing",
+   "Sales Operations",
+   "Sales Revenue",
+   "Revenue Operations",
+   "Sales Enablement"
+  ],
+  "Marketing": [
+   "Digital Marketing",
+   "Online Marketing",
+   "Marketing - Generic",
+   "Campaign",
+   "Events /Tradeshow",
+   "Strategic Marketing",
+   "Product/Industry/Solutions Marketing",
+   "Marketing Operations",
+   "Advertising"
+  ],
+  "Information Technology": [
+   "IT Security",
+   "Network Management",
+   "Infrastructure",
+   "Information Systems",
+   "Telecommunications",
+   "Help Desk/IT Support",
+   "IT Admin",
+   "IT Systems /Desktop",
+   "Information Technology - Generic",
+   "IT Applications"
+  ],
+  "Engineering and Development": [
+   "Software Architecture / Technologist",
+   "DBA",
+   "Engineering/Product Development",
+   "UX / UI Design",
+   "Technical",
+   "Architecture, Design & Planning",
+   "Research & Development",
+   "Product Management",
+   "E-Commerce & Mobile"
+  ],
+  "Miscellaneous": [
+   "Design",
+   "Business Intelligence",
+   "International / Regional",
+   "Risk/Fraud",
+   "Associate",
+   "Planning",
+   "Quality Control/ Assurance",
+   "Strategy"
+  ],
+  "Operations and related": [
+   "Operations - Generic",
+   "Loss Prevention/Protection",
+   "Customer Service/Support",
+   "Merchandise Management",
+   "Health/Safety",
+   "Production",
+   "Maintenance",
+   "Business Continuity",
+   "Project / Program Management"
+  ],
+  "Supply Chain Management": [
+   "Purchasing/Procurement",
+   "Category/Commodity",
+   "Supply chain - Generic",
+   "Inventory",
+   "Logistics",
+   "Warehouse",
+   "Import/Export"
+  ],
+  "Facility Operations": [
+   "Facilities/Branch",
+   "Real Estate/Property",
+   "Plant",
+   "Culinary",
+   "Store"
+  ],
+  "Finance/Banking/Insurance": [
+   "Trade and Portfolio",
+   "Financial Planning & Investment",
+   "Finance",
+   "Controller",
+   "Cash Management",
+   "Risk & Fraud",
+   "Banking",
+   "Insurance"
+  ],
+  "Human Resources and related": [
+   "Human Resources",
+   "Training & Development"
+  ],
+  "Communications/Public Relations": [
+   "Communications",
+   "Media & PR"
+  ],
+  "Medical & Wellness": [
+   "Wellness",
+   "Specialist",
+   "Pharmacist",
+   "Patient Care",
+   "Laboratory",
+   "Medical - Generic",
+   "Doctor"
+  ],
+  "Education / Teaching": [
+   "Education / Teaching"
+  ]
+ },
+ "industry": {
+  "Admin and Business Support Services": {
+   "code": "56",
+   "parent": ""
+  },
+  "Arts, Entertainment and Recreation": {
+   "code": "71",
+   "parent": ""
+  },
+  "Business Services": {
+   "code": "54",
+   "parent": ""
+  },
+  "Construction": {
+   "code": "24",
+   "parent": ""
+  },
+  "Consumer Services": {
+   "code": "81",
+   "parent": ""
+  },
+  "Educational Services": {
+   "code": "61",
+   "parent": ""
+  },
+  "Farming, Ranching and Forestry": {
+   "code": "11",
+   "parent": ""
+  },
+  "Finance and Insurance Services": {
+   "code": "52",
+   "parent": ""
+  },
+  "Government Administration Services": {
+   "code": "92",
+   "parent": ""
+  },
+  "Holding Companies": {
+   "code": "93",
+   "parent": ""
+  },
+  "Hospital and Health Care": {
+   "code": "62",
+   "parent": ""
+  },
+  "Hospitality Services": {
+   "code": "72",
+   "parent": ""
+  },
+  "Manufacturing": {
+   "code": "31",
+   "parent": ""
+  },
+  "Mining, Quarrying, and Oil and Gas": {
+   "code": "21",
+   "parent": ""
+  },
+  "Other": {
+   "code": "94",
+   "parent": ""
+  },
+  "Real Estate and Rental and Leasing": {
+   "code": "53",
+   "parent": ""
+  },
+  "Renewables and Environment": {
+   "code": "23",
+   "parent": ""
+  },
+  "Retail Trade": {
+   "code": "45",
+   "parent": ""
+  },
+  "Technology, Telecom, Information and Media Services": {
+   "code": "51",
+   "parent": ""
+  },
+  "Transportation, Logistics and Warehousing": {
+   "code": "48",
+   "parent": ""
+  },
+  "Utilities": {
+   "code": "22",
+   "parent": ""
+  },
+  "Wholesale Trade": {
+   "code": "42",
+   "parent": ""
+  },
+  "Business Support Services": {
+   "code": "5601",
+   "parent": "Admin and Business Support Services"
+  },
+  "Collection Agencies": {
+   "code": "5602",
+   "parent": "Admin and Business Support Services"
+  },
+  "Events Services": {
+   "code": "5603",
+   "parent": "Admin and Business Support Services"
+  },
+  "Facilities Services": {
+   "code": "5604",
+   "parent": "Admin and Business Support Services"
+  },
+  "Fundraising": {
+   "code": "5605",
+   "parent": "Admin and Business Support Services"
+  },
+  "Janitorial Services": {
+   "code": "5606",
+   "parent": "Admin and Business Support Services"
+  },
+  "Landscaping Services": {
+   "code": "5607",
+   "parent": "Admin and Business Support Services"
+  },
+  "Leisure, Travel and Tourism": {
+   "code": "5608",
+   "parent": "Admin and Business Support Services"
+  },
+  "Office Admin": {
+   "code": "5609",
+   "parent": "Admin and Business Support Services"
+  },
+  "Security and Investigations": {
+   "code": "5610",
+   "parent": "Admin and Business Support Services"
+  },
+  "Staffing and Recruiting": {
+   "code": "5611",
+   "parent": "Admin and Business Support Services"
+  },
+  "Writing and Editing": {
+   "code": "5612",
+   "parent": "Admin and Business Support Services"
+  },
+  "Amusement and Recreation Industries": {
+   "code": "7101",
+   "parent": "Arts, Entertainment and Recreation"
+  },
+  "Artists, Writers, and Performers": {
+   "code": "7102",
+   "parent": "Arts, Entertainment and Recreation"
+  },
+  "Arts and Crafts": {
+   "code": "7103",
+   "parent": "Arts, Entertainment and Recreation"
+  },
+  "Fine Arts": {
+   "code": "7104",
+   "parent": "Arts, Entertainment and Recreation"
+  },
+  "Fitness and Recreational Facilities": {
+   "code": "7105",
+   "parent": "Arts, Entertainment and Recreation"
+  },
+  "Gambling Industries": {
+   "code": "7106",
+   "parent": "Arts, Entertainment and Recreation"
+  },
+  "Museums, Historical Sites and Nature Parks": {
+   "code": "7107",
+   "parent": "Arts, Entertainment and Recreation"
+  },
+  "Performing Art Companies": {
+   "code": "7108",
+   "parent": "Arts, Entertainment and Recreation"
+  },
+  "Spectator Sports Services": {
+   "code": "7109",
+   "parent": "Arts, Entertainment and Recreation"
+  },
+  "Zoos and Botanical Gardens": {
+   "code": "7110",
+   "parent": "Arts, Entertainment and Recreation"
+  },
+  "Accounting Services": {
+   "code": "5401",
+   "parent": "Business Services"
+  },
+  "Advertising Services": {
+   "code": "5402",
+   "parent": "Business Services"
+  },
+  "Alternative Dispute Resolution": {
+   "code": "5403",
+   "parent": "Business Services"
+  },
+  "Architecture and Planning": {
+   "code": "5404",
+   "parent": "Business Services"
+  },
+  "Biotechnology": {
+   "code": "5405",
+   "parent": "Business Services"
+  },
+  "Computer and Network Security": {
+   "code": "5407",
+   "parent": "Business Services"
+  },
+  "Design Services": {
+   "code": "5408",
+   "parent": "Business Services"
+  },
+  "Engineering Services": {
+   "code": "5409",
+   "parent": "Business Services"
+  },
+  "Environmental Services": {
+   "code": "5410",
+   "parent": "Business Services"
+  },
+  "Government Relations Services": {
+   "code": "5411",
+   "parent": "Business Services"
+  },
+  "Human Resources": {
+   "code": "5412",
+   "parent": "Business Services"
+  },
+  "IT Services": {
+   "code": "5413",
+   "parent": "Business Services"
+  },
+  "IT System Services": {
+   "code": "5414",
+   "parent": "Business Services"
+  },
+  "Legal Services": {
+   "code": "5415",
+   "parent": "Business Services"
+  },
+  "Management Consulting": {
+   "code": "5416",
+   "parent": "Business Services"
+  },
+  "Marketing and Advertising": {
+   "code": "5417",
+   "parent": "Business Services"
+  },
+  "Marketing Services": {
+   "code": "5418",
+   "parent": "Business Services"
+  },
+  "Nanotechnology": {
+   "code": "5419",
+   "parent": "Business Services"
+  },
+  "Operations Consulting": {
+   "code": "5420",
+   "parent": "Business Services"
+  },
+  "Photography": {
+   "code": "5421",
+   "parent": "Business Services"
+  },
+  "Printing Services": {
+   "code": "5422",
+   "parent": "Business Services"
+  },
+  "Program Development Services": {
+   "code": "5423",
+   "parent": "Business Services"
+  },
+  "Public Relations and Communications": {
+   "code": "5424",
+   "parent": "Business Services"
+  },
+  "Renewable Energy Services": {
+   "code": "5425",
+   "parent": "Business Services"
+  },
+  "Research Services": {
+   "code": "5426",
+   "parent": "Business Services"
+  },
+  "Strategic Management Services": {
+   "code": "5427",
+   "parent": "Business Services"
+  },
+  "Think Tanks Services": {
+   "code": "5428",
+   "parent": "Business Services"
+  },
+  "Veterinary Services": {
+   "code": "5429",
+   "parent": "Business Services"
+  },
+  "Civil Engineering": {
+   "code": "2401",
+   "parent": "Construction"
+  },
+  "Heavy Engineering Construction": {
+   "code": "2402",
+   "parent": "Construction"
+  },
+  "Special Trade Contractors": {
+   "code": "2403",
+   "parent": "Construction"
+  },
+  "Civic and Social Organization": {
+   "code": "8101",
+   "parent": "Consumer Services"
+  },
+  "Household Services": {
+   "code": "8102",
+   "parent": "Consumer Services"
+  },
+  "Industry Associations": {
+   "code": "8103",
+   "parent": "Consumer Services"
+  },
+  "Laundry Services": {
+   "code": "8104",
+   "parent": "Consumer Services"
+  },
+  "Non-profit Organization Management": {
+   "code": "8105",
+   "parent": "Consumer Services"
+  },
+  "Personal Care Services": {
+   "code": "8106",
+   "parent": "Consumer Services"
+  },
+  "Philanthropic Fundraising Services": {
+   "code": "8107",
+   "parent": "Consumer Services"
+  },
+  "Political Organizations": {
+   "code": "8108",
+   "parent": "Consumer Services"
+  },
+  "Professional Organizations": {
+   "code": "8109",
+   "parent": "Consumer Services"
+  },
+  "Religious Institutions": {
+   "code": "8110",
+   "parent": "Consumer Services"
+  },
+  "Repair and Maintenance": {
+   "code": "8111",
+   "parent": "Consumer Services"
+  },
+  "Electronic Equipment Repair and Maintenance": {
+   "code": "81011",
+   "parent": "Civic and Social Organization"
+  },
+  "Footwear and Leather Goods Repair": {
+   "code": "81012",
+   "parent": "Civic and Social Organization"
+  },
+  "Industrial Repair and Maintenance": {
+   "code": "81021",
+   "parent": "Household Services"
+  },
+  "Reupholstery and Furniture Repair": {
+   "code": "81111",
+   "parent": "Repair and Maintenance"
+  },
+  "Vehicle Repair and Maintenance": {
+   "code": "81112",
+   "parent": "Repair and Maintenance"
+  },
+  "Primary, Secondary and Higher Education": {
+   "code": "6101",
+   "parent": "Educational Services"
+  },
+  "Professional Training and Coaching": {
+   "code": "6102",
+   "parent": "Educational Services"
+  },
+  "Sports and Recreational Instructor": {
+   "code": "6103",
+   "parent": "Educational Services"
+  },
+  "Animal Production and Aquaculture": {
+   "code": "1101",
+   "parent": "Farming, Ranching and Forestry"
+  },
+  "Farming and Crop Production": {
+   "code": "1102",
+   "parent": "Farming, Ranching and Forestry"
+  },
+  "Forestry and Logging": {
+   "code": "1103",
+   "parent": "Farming, Ranching and Forestry"
+  },
+  "Horticulture": {
+   "code": "1104",
+   "parent": "Farming, Ranching and Forestry"
+  },
+  "Fisheries": {
+   "code": "11011",
+   "parent": "Animal Production and Aquaculture"
+  },
+  "Ranching": {
+   "code": "11012",
+   "parent": "Animal Production and Aquaculture"
+  },
+  "Banking": {
+   "code": "5201",
+   "parent": "Finance and Insurance Services"
+  },
+  "Credit Intermediation and Related Services": {
+   "code": "5202",
+   "parent": "Finance and Insurance Services"
+  },
+  "Funds, Trusts and Other Financial Services": {
+   "code": "5203",
+   "parent": "Finance and Insurance Services"
+  },
+  "Insurance and Risk Management": {
+   "code": "5204",
+   "parent": "Finance and Insurance Services"
+  },
+  "International Trade and Development": {
+   "code": "5205",
+   "parent": "Finance and Insurance Services"
+  },
+  "Securities, Commodities, and Other Financial Investments": {
+   "code": "5206",
+   "parent": "Finance and Insurance Services"
+  },
+  "Venture Capital and Private Equity": {
+   "code": "5207",
+   "parent": "Finance and Insurance Services"
+  },
+  "Administration of Economic Programs": {
+   "code": "9201",
+   "parent": "Government Administration Services"
+  },
+  "Administration of Environmental Quality Programs": {
+   "code": "9202",
+   "parent": "Government Administration Services"
+  },
+  "Administration of Housing Programs, Urban Planning, and Community Development": {
+   "code": "9203",
+   "parent": "Government Administration Services"
+  },
+  "Administration of Public Resource Programs": {
+   "code": "9204",
+   "parent": "Government Administration Services"
+  },
+  "Executive Offices": {
+   "code": "9205",
+   "parent": "Government Administration Services"
+  },
+  "Justice, Public Order, and Safety Activities": {
+   "code": "9206",
+   "parent": "Government Administration Services"
+  },
+  "Legislative Offices": {
+   "code": "9207",
+   "parent": "Government Administration Services"
+  },
+  "National Security and International Affairs": {
+   "code": "9208",
+   "parent": "Government Administration Services"
+  },
+  "Public Policy": {
+   "code": "9209",
+   "parent": "Government Administration Services"
+  },
+  "Space Research and Technology": {
+   "code": "9210",
+   "parent": "Government Administration Services"
+  },
+  "Transportation Programs": {
+   "code": "9211",
+   "parent": "Government Administration Services"
+  },
+  "Utilities Administration": {
+   "code": "9212",
+   "parent": "Government Administration Services"
+  },
+  "Administration of Air and Water Resource and Solid Waste Management": {
+   "code": "92021",
+   "parent": "Administration of Environmental Quality Programs"
+  },
+  "Administration of Conservation Programs": {
+   "code": "92022",
+   "parent": "Administration of Environmental Quality Programs"
+  },
+  "Correctional Institutions": {
+   "code": "92061",
+   "parent": "Justice, Public Order, and Safety Activities"
+  },
+  "Courts": {
+   "code": "92062",
+   "parent": "Justice, Public Order, and Safety Activities"
+  },
+  "Fire Protection": {
+   "code": "92063",
+   "parent": "Justice, Public Order, and Safety Activities"
+  },
+  "Judiciary": {
+   "code": "92064",
+   "parent": "Justice, Public Order, and Safety Activities"
+  },
+  "Legal Counsel and Prosecution": {
+   "code": "92065",
+   "parent": "Justice, Public Order, and Safety Activities"
+  },
+  "Other Justice, Public Order, and Safety Activities": {
+   "code": "92066",
+   "parent": "Justice, Public Order, and Safety Activities"
+  },
+  "Armed Forces": {
+   "code": "92081",
+   "parent": "National Security and International Affairs"
+  },
+  "International Affairs": {
+   "code": "92082",
+   "parent": "National Security and International Affairs"
+  },
+  "Military": {
+   "code": "92083",
+   "parent": "National Security and International Affairs"
+  },
+  "Alternative / Complementary / Integrative Medicine Manufacturing": {
+   "code": "6201",
+   "parent": "Hospital and Health Care"
+  },
+  "Healthcare Providers and Medical Practice": {
+   "code": "6202",
+   "parent": "Hospital and Health Care"
+  },
+  "Individual, Family, and Social Services": {
+   "code": "6203",
+   "parent": "Hospital and Health Care"
+  },
+  "Specialized Healthcare Services": {
+   "code": "6204",
+   "parent": "Hospital and Health Care"
+  },
+  "Accommodation Services": {
+   "code": "7201",
+   "parent": "Hospitality Services"
+  },
+  "Catering": {
+   "code": "7202",
+   "parent": "Hospitality Services"
+  },
+  "Hostels": {
+   "code": "7203",
+   "parent": "Hospitality Services"
+  },
+  "Restaurants, Bars, and Food Services": {
+   "code": "7204",
+   "parent": "Hospitality Services"
+  },
+  "Aerospace and Aircraft Manufacturing": {
+   "code": "31001",
+   "parent": "Manufacturing"
+  },
+  "Apparel and Fashion Accessories": {
+   "code": "31002",
+   "parent": "Manufacturing"
+  },
+  "Automobile / Vehicle / Original Equipment Manufacturing": {
+   "code": "31003",
+   "parent": "Manufacturing"
+  },
+  "Chemical Manufacturing": {
+   "code": "31004",
+   "parent": "Manufacturing"
+  },
+  "Defense and Space": {
+   "code": "31005",
+   "parent": "Manufacturing"
+  },
+  "Electrical and Electronics Manufacturing": {
+   "code": "31006",
+   "parent": "Manufacturing"
+  },
+  "Food and Beverage Manufacturing": {
+   "code": "31007",
+   "parent": "Manufacturing"
+  },
+  "Furniture and Fixtures": {
+   "code": "31008",
+   "parent": "Manufacturing"
+  },
+  "Glass, Ceramics and Concrete": {
+   "code": "31009",
+   "parent": "Manufacturing"
+  },
+  "Industrial Machinery Manufacturing": {
+   "code": "31010",
+   "parent": "Manufacturing"
+  },
+  "Industrial Metals and Equipment Manufacturing": {
+   "code": "31011",
+   "parent": "Manufacturing"
+  },
+  "Medical Devices": {
+   "code": "31012",
+   "parent": "Manufacturing"
+  },
+  "Office Supplies, Stationery, and Gift Stores": {
+   "code": "31013",
+   "parent": "Manufacturing"
+  },
+  "Oil and Coal Product Manufacturing": {
+   "code": "31014",
+   "parent": "Manufacturing"
+  },
+  "Paper and Related Products": {
+   "code": "31015",
+   "parent": "Manufacturing"
+  },
+  "Pharmaceuticals Manufacturing": {
+   "code": "31016",
+   "parent": "Manufacturing"
+  },
+  "Railroad Manufacture and Services": {
+   "code": "31017",
+   "parent": "Manufacturing"
+  },
+  "Ship / Boat Building": {
+   "code": "31018",
+   "parent": "Manufacturing"
+  },
+  "Sporting Goods": {
+   "code": "31019",
+   "parent": "Manufacturing"
+  },
+  "Textile Manufacturing - Fiber / Yarn / Thread Mills": {
+   "code": "31020",
+   "parent": "Manufacturing"
+  },
+  "Tobacco Manufacturing": {
+   "code": "31021",
+   "parent": "Manufacturing"
+  },
+  "Transportation Equipment Products": {
+   "code": "31022",
+   "parent": "Manufacturing"
+  },
+  "Chemical Related Products": {
+   "code": "310041",
+   "parent": "Chemical Manufacturing"
+  },
+  "Personal Care & Beauty Products Manufacturing": {
+   "code": "310042",
+   "parent": "Chemical Manufacturing"
+  },
+  "Computer Related Products": {
+   "code": "310061",
+   "parent": "Electrical and Electronics Manufacturing"
+  },
+  "Electrical Manufacturing": {
+   "code": "310062",
+   "parent": "Electrical and Electronics Manufacturing"
+  },
+  "Electronics Manufacturing": {
+   "code": "310063",
+   "parent": "Electrical and Electronics Manufacturing"
+  },
+  "Semiconductor Products": {
+   "code": "310064",
+   "parent": "Electrical and Electronics Manufacturing"
+  },
+  "Animal Food Products": {
+   "code": "310071",
+   "parent": "Food and Beverage Manufacturing"
+  },
+  "Baked Products": {
+   "code": "310072",
+   "parent": "Food and Beverage Manufacturing"
+  },
+  "Beverages": {
+   "code": "310073",
+   "parent": "Food and Beverage Manufacturing"
+  },
+  "Dairy Products": {
+   "code": "310074",
+   "parent": "Food and Beverage Manufacturing"
+  },
+  "Frozen Foods": {
+   "code": "310075",
+   "parent": "Food and Beverage Manufacturing"
+  },
+  "Sugar Products": {
+   "code": "310076",
+   "parent": "Food and Beverage Manufacturing"
+  },
+  "Glass Products": {
+   "code": "310091",
+   "parent": "Glass, Ceramics and Concrete"
+  },
+  "Energy Equipment": {
+   "code": "310101",
+   "parent": "Industrial Machinery Manufacturing"
+  },
+  "Engines and Power Transmission Equipment": {
+   "code": "310102",
+   "parent": "Industrial Machinery Manufacturing"
+  },
+  "HVAC and Refrigeration Equipment": {
+   "code": "310103",
+   "parent": "Industrial Machinery Manufacturing"
+  },
+  "Mechanical / Industrial Engineering": {
+   "code": "310104",
+   "parent": "Industrial Machinery Manufacturing"
+  },
+  "Mining": {
+   "code": "2101",
+   "parent": "Mining, Quarrying, and Oil and Gas"
+  },
+  "Oil and Energy": {
+   "code": "2102",
+   "parent": "Mining, Quarrying, and Oil and Gas"
+  },
+  "Oil and Gas": {
+   "code": "2103",
+   "parent": "Mining, Quarrying, and Oil and Gas"
+  },
+  "Coal Mining": {
+   "code": "21011",
+   "parent": "Mining"
+  },
+  "Metal Ore Mining": {
+   "code": "21012",
+   "parent": "Mining"
+  },
+  "Nonmetallic Mineral Mining": {
+   "code": "21013",
+   "parent": "Mining"
+  },
+  "Oil Extraction": {
+   "code": "21031",
+   "parent": "Oil and Gas"
+  },
+  "Natural Gas Extraction": {
+   "code": "21032",
+   "parent": "Oil and Gas"
+  },
+  "Real Estate Services": {
+   "code": "5301",
+   "parent": "Real Estate and Rental and Leasing"
+  },
+  "Rental and Leasing Services": {
+   "code": "5302",
+   "parent": "Real Estate and Rental and Leasing"
+  },
+  "Apparel and Fashion - Retail Trade": {
+   "code": "4501",
+   "parent": "Retail Trade"
+  },
+  "Art Dealers - Retail Trade": {
+   "code": "4502",
+   "parent": "Retail Trade"
+  },
+  "Art Supplier - Retail Trade": {
+   "code": "4503",
+   "parent": "Retail Trade"
+  },
+  "Books and Printed News - Retail Trade": {
+   "code": "4504",
+   "parent": "Retail Trade"
+  },
+  "Building Materials and Garden Equipment - Retail Trade": {
+   "code": "4505",
+   "parent": "Retail Trade"
+  },
+  "Consumer Electronics - Retail Trade": {
+   "code": "4506",
+   "parent": "Retail Trade"
+  },
+  "Florists - Retail Trade": {
+   "code": "4507",
+   "parent": "Retail Trade"
+  },
+  "Food and Beverages - Retail Trade": {
+   "code": "4508",
+   "parent": "Retail Trade"
+  },
+  "Furniture and Home Furnishings - Retail Trade": {
+   "code": "4509",
+   "parent": "Retail Trade"
+  },
+  "Gasoline - Retail Trade": {
+   "code": "4510",
+   "parent": "Retail Trade"
+  },
+  "Grocery - Retail Trade": {
+   "code": "4511",
+   "parent": "Retail Trade"
+  },
+  "Health and Personal Care Products - Retail Trade": {
+   "code": "4512",
+   "parent": "Retail Trade"
+  },
+  "Luxury Goods and Jewelry - Retail Trade": {
+   "code": "4513",
+   "parent": "Retail Trade"
+  },
+  "Motor Vehicles - Retail Trade": {
+   "code": "4514",
+   "parent": "Retail Trade"
+  },
+  "Musical Instruments - Retail Trade": {
+   "code": "4515",
+   "parent": "Retail Trade"
+  },
+  "Office Equipment - Retail Trade": {
+   "code": "4516",
+   "parent": "Retail Trade"
+  },
+  "Office Supplies and Gifts - Retail Trade": {
+   "code": "4517",
+   "parent": "Retail Trade"
+  },
+  "Online and Mail Order Retail Trade": {
+   "code": "4518",
+   "parent": "Retail Trade"
+  },
+  "Recyclable Materials and Used Merchandise - Retail Trade": {
+   "code": "4519",
+   "parent": "Retail Trade"
+  },
+  "Supermarkets": {
+   "code": "4521",
+   "parent": "Retail Trade"
+  },
+  "Broadcasting (except Internet)": {
+   "code": "5101",
+   "parent": "Technology, Telecom, Information and Media Services"
+  },
+  "Motion Picture and Sound Recording Industries": {
+   "code": "5102",
+   "parent": "Technology, Telecom, Information and Media Services"
+  },
+  "Publishing Industries": {
+   "code": "5103",
+   "parent": "Technology, Telecom, Information and Media Services"
+  },
+  "Software Development": {
+   "code": "5104",
+   "parent": "Technology, Telecom, Information and Media Services"
+  },
+  "Tech, Information and Internet Services": {
+   "code": "5105",
+   "parent": "Technology, Telecom, Information and Media Services"
+  },
+  "Telecommunications": {
+   "code": "5106",
+   "parent": "Technology, Telecom, Information and Media Services"
+  },
+  "Cable and Other Subscription Programming": {
+   "code": "51011",
+   "parent": "Broadcasting (except Internet)"
+  },
+  "Radio and Television Broadcasting": {
+   "code": "51012",
+   "parent": "Broadcasting (except Internet)"
+  },
+  "Animation and Postproduction Services": {
+   "code": "51021",
+   "parent": "Motion Picture and Sound Recording Industries"
+  },
+  "Media Production": {
+   "code": "51022",
+   "parent": "Motion Picture and Sound Recording Industries"
+  },
+  "Motion Picture and Video": {
+   "code": "51023",
+   "parent": "Motion Picture and Sound Recording Industries"
+  },
+  "Movies and Sound Recording Services": {
+   "code": "51024",
+   "parent": "Motion Picture and Sound Recording Industries"
+  },
+  "Music Publishers": {
+   "code": "51025",
+   "parent": "Motion Picture and Sound Recording Industries"
+  },
+  "Book Publisher": {
+   "code": "51031",
+   "parent": "Publishing Industries"
+  },
+  "Newspaper Publishers": {
+   "code": "51032",
+   "parent": "Publishing Industries"
+  },
+  "Periodical Publishers": {
+   "code": "51033",
+   "parent": "Publishing Industries"
+  },
+  "Computer Networking": {
+   "code": "51041",
+   "parent": "Software Development"
+  },
+  "Computer Software Services": {
+   "code": "51042",
+   "parent": "Software Development"
+  },
+  "Data Security Software Products": {
+   "code": "51043",
+   "parent": "Software Development"
+  },
+  "Desktop Computing Software Products": {
+   "code": "51044",
+   "parent": "Software Development"
+  },
+  "Embedded Software Products": {
+   "code": "51045",
+   "parent": "Software Development"
+  },
+  "Gaming Services": {
+   "code": "51046",
+   "parent": "Software Development"
+  },
+  "Mobile Computing Software Products": {
+   "code": "51047",
+   "parent": "Software Development"
+  },
+  "Blockchain Services": {
+   "code": "51051",
+   "parent": "Tech, Information and Internet Services"
+  },
+  "Business Intelligence Platforms": {
+   "code": "51052",
+   "parent": "Tech, Information and Internet Services"
+  },
+  "Data Infrastructure and Analytics": {
+   "code": "51053",
+   "parent": "Tech, Information and Internet Services"
+  },
+  "Information Services": {
+   "code": "51054",
+   "parent": "Tech, Information and Internet Services"
+  },
+  "Internet Publishers": {
+   "code": "51055",
+   "parent": "Tech, Information and Internet Services"
+  },
+  "Online Audio and Video Media Services": {
+   "code": "51056",
+   "parent": "Tech, Information and Internet Services"
+  },
+  "Other Information Services": {
+   "code": "51057",
+   "parent": "Tech, Information and Internet Services"
+  },
+  "Platforms Services": {
+   "code": "51058",
+   "parent": "Tech, Information and Internet Services"
+  },
+  "Satellite Telecommunications": {
+   "code": "51061",
+   "parent": "Telecommunications"
+  },
+  "Telecommunications Carriers": {
+   "code": "51062",
+   "parent": "Telecommunications"
+  },
+  "Wireless Telecommunications": {
+   "code": "51063",
+   "parent": "Telecommunications"
+  },
+  "Air Transportation": {
+   "code": "4801",
+   "parent": "Transportation, Logistics and Warehousing"
+  },
+  "Logistics and Supply Chain": {
+   "code": "4802",
+   "parent": "Transportation, Logistics and Warehousing"
+  },
+  "Maritime and Shipping Industry": {
+   "code": "4803",
+   "parent": "Transportation, Logistics and Warehousing"
+  },
+  "Package / Freight Delivery Service": {
+   "code": "4804",
+   "parent": "Transportation, Logistics and Warehousing"
+  },
+  "Postal Services": {
+   "code": "4805",
+   "parent": "Transportation, Logistics and Warehousing"
+  },
+  "Transit and Ground Passenger Transportation": {
+   "code": "4806",
+   "parent": "Transportation, Logistics and Warehousing"
+  },
+  "Trucking / Railroad": {
+   "code": "4807",
+   "parent": "Transportation, Logistics and Warehousing"
+  },
+  "Warehousing and Storage Service": {
+   "code": "4808",
+   "parent": "Transportation, Logistics and Warehousing"
+  },
+  "Electric Power Generation": {
+   "code": "2201",
+   "parent": "Utilities"
+  },
+  "Electric Power Transmission, Control, and Distribution": {
+   "code": "2202",
+   "parent": "Utilities"
+  },
+  "Natural Gas Distribution": {
+   "code": "2203",
+   "parent": "Utilities"
+  },
+  "Water, Waste Management and Remediation Services": {
+   "code": "2204",
+   "parent": "Utilities"
+  },
+  "Alcohol Beverages - Wholesale Trade": {
+   "code": "4201",
+   "parent": "Wholesale Trade"
+  },
+  "Apparel and Sewing Supplies - Wholesale Trade": {
+   "code": "4202",
+   "parent": "Wholesale Trade"
+  },
+  "Appliances, Electrical and Electronics - Wholesale Trade": {
+   "code": "4204",
+   "parent": "Wholesale Trade"
+  },
+  "Building Materials - Wholesale Trade": {
+   "code": "4205",
+   "parent": "Wholesale Trade"
+  },
+  "Chemical and Allied Products - Wholesale Trade": {
+   "code": "4206",
+   "parent": "Wholesale Trade"
+  },
+  "Computer Equipment - Wholesale Trade": {
+   "code": "4207",
+   "parent": "Wholesale Trade"
+  },
+  "Drugs and Sundries - Wholesale Trade": {
+   "code": "4208",
+   "parent": "Wholesale Trade"
+  },
+  "Food and Beverages - Wholesale Trade": {
+   "code": "4209",
+   "parent": "Wholesale Trade"
+  },
+  "Footwear - Wholesale Trade": {
+   "code": "4210",
+   "parent": "Wholesale Trade"
+  },
+  "Furniture and Home Furnishings - Wholesale Trade": {
+   "code": "4211",
+   "parent": "Wholesale Trade"
+  },
+  "Hardware, Plumbing, Heating Equipment - Wholesale Trade": {
+   "code": "4212",
+   "parent": "Wholesale Trade"
+  },
+  "Import and Export - Wholesale Trade": {
+   "code": "4213",
+   "parent": "Wholesale Trade"
+  },
+  "Luxury Goods and Jewelry - Wholesale Trade": {
+   "code": "4214",
+   "parent": "Wholesale Trade"
+  },
+  "Machinery - Wholesale Trade": {
+   "code": "4215",
+   "parent": "Wholesale Trade"
+  },
+  "Metals and Minerals - Wholesale Trade": {
+   "code": "4216",
+   "parent": "Wholesale Trade"
+  },
+  "Motor Vehicles and Parts - Wholesale Trade": {
+   "code": "4217",
+   "parent": "Wholesale Trade"
+  },
+  "Paper Products - Wholesale Trade": {
+   "code": "4218",
+   "parent": "Wholesale Trade"
+  },
+  "Petroleum and Petroleum Products - Wholesale Trade": {
+   "code": "4219",
+   "parent": "Wholesale Trade"
+  },
+  "Photography Equipment and Supplies - Wholesale Trade": {
+   "code": "4220",
+   "parent": "Wholesale Trade"
+  },
+  "Raw Farm Products - Wholesale Trade": {
+   "code": "4221",
+   "parent": "Wholesale Trade"
+  },
+  "Recyclable Materials - Wholesale Trade": {
+   "code": "4222",
+   "parent": "Wholesale Trade"
+  }
+ },
+ "enumerated": {
+  "seniority": [
+   "Founder/CXO",
+   "VP",
+   "MD",
+   "Director",
+   "Head",
+   "Manager",
+   "Board Members/Trustee",
+   "Staff/Principal",
+   "Below Manager"
+  ],
+  "job_changed": [
+   "In past 1 month",
+   "In past 3 months",
+   "In past 6 months",
+   "In past 12 months"
+  ],
+  "promoted": [
+   "In past 1 month",
+   "In past 3 months",
+   "In past 6 months",
+   "In past 12 months"
+  ],
+  "last_funding_date": [
+   "In past 6 months",
+   "In past 12 months",
+   "In past 18 months"
+  ],
+  "signals_date": [
+   "In past 1 month",
+   "In past 3 months",
+   "In past 6 months",
+   "In past 9 months"
+  ],
+  "signals_type": [
+   "Growth & Expansion",
+   "M&A",
+   "Partnership",
+   "Funding & IPO",
+   "Compliance",
+   "New Offering",
+   "Layoffs",
+   "Recognition",
+   "Events",
+   "Job Change"
+  ],
+  "last_funding_round": [
+   "Convertible & Debt Financing",
+   "Equity & Crowdfunding",
+   "Grant",
+   "ICO & Non-Equity",
+   "Post-IPO Funding",
+   "Pre-Seed & Seed Funding",
+   "Private Equity",
+   "Secondary Market",
+   "Series A",
+   "Series B",
+   "Series C",
+   "Series D",
+   "Series E",
+   "Series F",
+   "Series G",
+   "Series H",
+   "Series I",
+   "Series J",
+   "Series Unknown",
+   "Undisclosed"
+  ],
+  "revenue_predef": [
+   "$0 - $500K",
+   "$500K - $1M",
+   "$1M - $5M",
+   "$5M - $10M",
+   "$10M - $25M",
+   "$25M - $50M",
+   "$50M - $100M",
+   "$100M - $250M",
+   "$250M - $500M",
+   "$500M - $1B",
+   "$1B - $5B",
+   "$5B - $10B",
+   "$10B+"
+  ],
+  "headcount_predef": [
+   "1 to 10",
+   "11 to 50",
+   "51 to 200",
+   "201 to 500",
+   "501 to 1000",
+   "1001 to 5000",
+   "5001 to 10,000",
+   "10,001+"
+  ],
+  "data_grade": [
+   "B+",
+   "A-",
+   "A",
+   "A+"
+  ],
+  "exclusions": [
+   "My revealed / exported leads",
+   "My exported accounts",
+   "Org revealed / exported leads",
+   "Org exported accounts"
+  ],
+  "is_subsidiary": [
+   "Yes",
+   "No"
+  ],
+  "multinational": [
+   "Yes",
+   "No"
+  ],
+  "industry": [
+   "Admin and Business Support Services",
+   "Arts, Entertainment and Recreation",
+   "Business Services",
+   "Construction",
+   "Consumer Services",
+   "Educational Services",
+   "Farming, Ranching and Forestry",
+   "Finance and Insurance Services",
+   "Government Administration Services",
+   "Holding Companies",
+   "Hospital and Health Care",
+   "Hospitality Services",
+   "Manufacturing",
+   "Mining, Quarrying, and Oil and Gas",
+   "Other",
+   "Real Estate and Rental and Leasing",
+   "Renewables and Environment",
+   "Retail Trade",
+   "Technology, Telecom, Information and Media Services",
+   "Transportation, Logistics and Warehousing",
+   "Utilities",
+   "Wholesale Trade",
+   "Business Support Services",
+   "Collection Agencies",
+   "Events Services",
+   "Facilities Services",
+   "Fundraising",
+   "Janitorial Services",
+   "Landscaping Services",
+   "Leisure, Travel and Tourism",
+   "Office Admin",
+   "Security and Investigations",
+   "Staffing and Recruiting",
+   "Writing and Editing",
+   "Amusement and Recreation Industries",
+   "Artists, Writers, and Performers",
+   "Arts and Crafts",
+   "Fine Arts",
+   "Fitness and Recreational Facilities",
+   "Gambling Industries",
+   "Museums, Historical Sites and Nature Parks",
+   "Performing Art Companies",
+   "Spectator Sports Services",
+   "Zoos and Botanical Gardens",
+   "Accounting Services",
+   "Advertising Services",
+   "Alternative Dispute Resolution",
+   "Architecture and Planning",
+   "Biotechnology",
+   "Computer and Network Security",
+   "Design Services",
+   "Engineering Services",
+   "Environmental Services",
+   "Government Relations Services",
+   "Human Resources",
+   "IT Services",
+   "IT System Services",
+   "Legal Services",
+   "Management Consulting",
+   "Marketing and Advertising",
+   "Marketing Services",
+   "Nanotechnology",
+   "Operations Consulting",
+   "Photography",
+   "Printing Services",
+   "Program Development Services",
+   "Public Relations and Communications",
+   "Renewable Energy Services",
+   "Research Services",
+   "Strategic Management Services",
+   "Think Tanks Services",
+   "Veterinary Services",
+   "Civil Engineering",
+   "Heavy Engineering Construction",
+   "Special Trade Contractors",
+   "Civic and Social Organization",
+   "Household Services",
+   "Industry Associations",
+   "Laundry Services",
+   "Non-profit Organization Management",
+   "Personal Care Services",
+   "Philanthropic Fundraising Services",
+   "Political Organizations",
+   "Professional Organizations",
+   "Religious Institutions",
+   "Repair and Maintenance",
+   "Electronic Equipment Repair and Maintenance",
+   "Footwear and Leather Goods Repair",
+   "Industrial Repair and Maintenance",
+   "Reupholstery and Furniture Repair",
+   "Vehicle Repair and Maintenance",
+   "Primary, Secondary and Higher Education",
+   "Professional Training and Coaching",
+   "Sports and Recreational Instructor",
+   "Animal Production and Aquaculture",
+   "Farming and Crop Production",
+   "Forestry and Logging",
+   "Horticulture",
+   "Fisheries",
+   "Ranching",
+   "Banking",
+   "Credit Intermediation and Related Services",
+   "Funds, Trusts and Other Financial Services",
+   "Insurance and Risk Management",
+   "International Trade and Development",
+   "Securities, Commodities, and Other Financial Investments",
+   "Venture Capital and Private Equity",
+   "Administration of Economic Programs",
+   "Administration of Environmental Quality Programs",
+   "Administration of Housing Programs, Urban Planning, and Community Development",
+   "Administration of Public Resource Programs",
+   "Executive Offices",
+   "Justice, Public Order, and Safety Activities",
+   "Legislative Offices",
+   "National Security and International Affairs",
+   "Public Policy",
+   "Space Research and Technology",
+   "Transportation Programs",
+   "Utilities Administration",
+   "Administration of Air and Water Resource and Solid Waste Management",
+   "Administration of Conservation Programs",
+   "Correctional Institutions",
+   "Courts",
+   "Fire Protection",
+   "Judiciary",
+   "Legal Counsel and Prosecution",
+   "Other Justice, Public Order, and Safety Activities",
+   "Armed Forces",
+   "International Affairs",
+   "Military",
+   "Alternative / Complementary / Integrative Medicine Manufacturing",
+   "Healthcare Providers and Medical Practice",
+   "Individual, Family, and Social Services",
+   "Specialized Healthcare Services",
+   "Accommodation Services",
+   "Catering",
+   "Hostels",
+   "Restaurants, Bars, and Food Services",
+   "Aerospace and Aircraft Manufacturing",
+   "Apparel and Fashion Accessories",
+   "Automobile / Vehicle / Original Equipment Manufacturing",
+   "Chemical Manufacturing",
+   "Defense and Space",
+   "Electrical and Electronics Manufacturing",
+   "Food and Beverage Manufacturing",
+   "Furniture and Fixtures",
+   "Glass, Ceramics and Concrete",
+   "Industrial Machinery Manufacturing",
+   "Industrial Metals and Equipment Manufacturing",
+   "Medical Devices",
+   "Office Supplies, Stationery, and Gift Stores",
+   "Oil and Coal Product Manufacturing",
+   "Paper and Related Products",
+   "Pharmaceuticals Manufacturing",
+   "Railroad Manufacture and Services",
+   "Ship / Boat Building",
+   "Sporting Goods",
+   "Textile Manufacturing - Fiber / Yarn / Thread Mills",
+   "Tobacco Manufacturing",
+   "Transportation Equipment Products",
+   "Chemical Related Products",
+   "Personal Care & Beauty Products Manufacturing",
+   "Computer Related Products",
+   "Electrical Manufacturing",
+   "Electronics Manufacturing",
+   "Semiconductor Products",
+   "Animal Food Products",
+   "Baked Products",
+   "Beverages",
+   "Dairy Products",
+   "Frozen Foods",
+   "Sugar Products",
+   "Glass Products",
+   "Energy Equipment",
+   "Engines and Power Transmission Equipment",
+   "HVAC and Refrigeration Equipment",
+   "Mechanical / Industrial Engineering",
+   "Mining",
+   "Oil and Energy",
+   "Oil and Gas",
+   "Coal Mining",
+   "Metal Ore Mining",
+   "Nonmetallic Mineral Mining",
+   "Oil Extraction",
+   "Natural Gas Extraction",
+   "Real Estate Services",
+   "Rental and Leasing Services",
+   "Apparel and Fashion - Retail Trade",
+   "Art Dealers - Retail Trade",
+   "Art Supplier - Retail Trade",
+   "Books and Printed News - Retail Trade",
+   "Building Materials and Garden Equipment - Retail Trade",
+   "Consumer Electronics - Retail Trade",
+   "Florists - Retail Trade",
+   "Food and Beverages - Retail Trade",
+   "Furniture and Home Furnishings - Retail Trade",
+   "Gasoline - Retail Trade",
+   "Grocery - Retail Trade",
+   "Health and Personal Care Products - Retail Trade",
+   "Luxury Goods and Jewelry - Retail Trade",
+   "Motor Vehicles - Retail Trade",
+   "Musical Instruments - Retail Trade",
+   "Office Equipment - Retail Trade",
+   "Office Supplies and Gifts - Retail Trade",
+   "Online and Mail Order Retail Trade",
+   "Recyclable Materials and Used Merchandise - Retail Trade",
+   "Supermarkets",
+   "Broadcasting (except Internet)",
+   "Motion Picture and Sound Recording Industries",
+   "Publishing Industries",
+   "Software Development",
+   "Tech, Information and Internet Services",
+   "Telecommunications",
+   "Cable and Other Subscription Programming",
+   "Radio and Television Broadcasting",
+   "Animation and Postproduction Services",
+   "Media Production",
+   "Motion Picture and Video",
+   "Movies and Sound Recording Services",
+   "Music Publishers",
+   "Book Publisher",
+   "Newspaper Publishers",
+   "Periodical Publishers",
+   "Computer Networking",
+   "Computer Software Services",
+   "Data Security Software Products",
+   "Desktop Computing Software Products",
+   "Embedded Software Products",
+   "Gaming Services",
+   "Mobile Computing Software Products",
+   "Blockchain Services",
+   "Business Intelligence Platforms",
+   "Data Infrastructure and Analytics",
+   "Information Services",
+   "Internet Publishers",
+   "Online Audio and Video Media Services",
+   "Other Information Services",
+   "Platforms Services",
+   "Satellite Telecommunications",
+   "Telecommunications Carriers",
+   "Wireless Telecommunications",
+   "Air Transportation",
+   "Logistics and Supply Chain",
+   "Maritime and Shipping Industry",
+   "Package / Freight Delivery Service",
+   "Postal Services",
+   "Transit and Ground Passenger Transportation",
+   "Trucking / Railroad",
+   "Warehousing and Storage Service",
+   "Electric Power Generation",
+   "Electric Power Transmission, Control, and Distribution",
+   "Natural Gas Distribution",
+   "Water, Waste Management and Remediation Services",
+   "Alcohol Beverages - Wholesale Trade",
+   "Apparel and Sewing Supplies - Wholesale Trade",
+   "Appliances, Electrical and Electronics - Wholesale Trade",
+   "Building Materials - Wholesale Trade",
+   "Chemical and Allied Products - Wholesale Trade",
+   "Computer Equipment - Wholesale Trade",
+   "Drugs and Sundries - Wholesale Trade",
+   "Food and Beverages - Wholesale Trade",
+   "Footwear - Wholesale Trade",
+   "Furniture and Home Furnishings - Wholesale Trade",
+   "Hardware, Plumbing, Heating Equipment - Wholesale Trade",
+   "Import and Export - Wholesale Trade",
+   "Luxury Goods and Jewelry - Wholesale Trade",
+   "Machinery - Wholesale Trade",
+   "Metals and Minerals - Wholesale Trade",
+   "Motor Vehicles and Parts - Wholesale Trade",
+   "Paper Products - Wholesale Trade",
+   "Petroleum and Petroleum Products - Wholesale Trade",
+   "Photography Equipment and Supplies - Wholesale Trade",
+   "Raw Farm Products - Wholesale Trade",
+   "Recyclable Materials - Wholesale Trade"
+  ],
+  "dept_headcount": [
+   "Top Management",
+   "Administration",
+   "Legal /Regulatory & Compliance",
+   "Accounting and related",
+   "Sales",
+   "Marketing",
+   "Information Technology",
+   "Engineering and Development",
+   "Miscellaneous",
+   "Operations and related",
+   "Supply Chain Management",
+   "Facility Operations",
+   "Finance/Banking/Insurance",
+   "Human Resources and related",
+   "Communications/Public Relations",
+   "Medical & Wellness",
+   "Education / Teaching"
+  ],
+  "department": [
+   "Top Management (All)",
+   "Administration (All)",
+   "Legal /Regulatory & Compliance (All)",
+   "Accounting and related (All)",
+   "Sales (All)",
+   "Marketing (All)",
+   "Information Technology (All)",
+   "Engineering and Development (All)",
+   "Miscellaneous (All)",
+   "Operations and related (All)",
+   "Supply Chain Management (All)",
+   "Facility Operations (All)",
+   "Finance/Banking/Insurance (All)",
+   "Human Resources and related (All)",
+   "Communications/Public Relations (All)",
+   "Medical & Wellness (All)",
+   "Education / Teaching (All)",
+   "Top Management › Founder & CEO",
+   "Top Management › GM / MD",
+   "Top Management › Board Member",
+   "Administration › Secretary",
+   "Administration › Merger/Acquisition",
+   "Administration › Administration - Generic",
+   "Legal /Regulatory & Compliance › Regulatory & Compliance",
+   "Legal /Regulatory & Compliance › Legal",
+   "Accounting and related › Accounting",
+   "Accounting and related › Audit",
+   "Accounting and related › Corporate Tax",
+   "Sales › Inside Sales/Sales Development",
+   "Sales › Account Executive/Management",
+   "Sales › Sales - Generic",
+   "Sales › Client/Customer Relationship/Engagement",
+   "Sales › Regional/Territory",
+   "Sales › International/Global",
+   "Sales › Business Development/Partnership",
+   "Sales › Sales and Marketing",
+   "Sales › Sales Operations",
+   "Sales › Sales Revenue",
+   "Sales › Revenue Operations",
+   "Sales › Sales Enablement",
+   "Marketing › Digital Marketing",
+   "Marketing › Online Marketing",
+   "Marketing › Marketing - Generic",
+   "Marketing › Campaign",
+   "Marketing › Events /Tradeshow",
+   "Marketing › Strategic Marketing",
+   "Marketing › Product/Industry/Solutions Marketing",
+   "Marketing › Marketing Operations",
+   "Marketing › Advertising",
+   "Information Technology › IT Security",
+   "Information Technology › Network Management",
+   "Information Technology › Infrastructure",
+   "Information Technology › Information Systems",
+   "Information Technology › Telecommunications",
+   "Information Technology › Help Desk/IT Support",
+   "Information Technology › IT Admin",
+   "Information Technology › IT Systems /Desktop",
+   "Information Technology › Information Technology - Generic",
+   "Information Technology › IT Applications",
+   "Engineering and Development › Software Architecture / Technologist",
+   "Engineering and Development › DBA",
+   "Engineering and Development › Engineering/Product Development",
+   "Engineering and Development › UX / UI Design",
+   "Engineering and Development › Technical",
+   "Engineering and Development › Architecture, Design & Planning",
+   "Engineering and Development › Research & Development",
+   "Engineering and Development › Product Management",
+   "Engineering and Development › E-Commerce & Mobile",
+   "Miscellaneous › Design",
+   "Miscellaneous › Business Intelligence",
+   "Miscellaneous › International / Regional",
+   "Miscellaneous › Risk/Fraud",
+   "Miscellaneous › Associate",
+   "Miscellaneous › Planning",
+   "Miscellaneous › Quality Control/ Assurance",
+   "Miscellaneous › Strategy",
+   "Operations and related › Operations - Generic",
+   "Operations and related › Loss Prevention/Protection",
+   "Operations and related › Customer Service/Support",
+   "Operations and related › Merchandise Management",
+   "Operations and related › Health/Safety",
+   "Operations and related › Production",
+   "Operations and related › Maintenance",
+   "Operations and related › Business Continuity",
+   "Operations and related › Project / Program Management",
+   "Supply Chain Management › Purchasing/Procurement",
+   "Supply Chain Management › Category/Commodity",
+   "Supply Chain Management › Supply chain - Generic",
+   "Supply Chain Management › Inventory",
+   "Supply Chain Management › Logistics",
+   "Supply Chain Management › Warehouse",
+   "Supply Chain Management › Import/Export",
+   "Facility Operations › Facilities/Branch",
+   "Facility Operations › Real Estate/Property",
+   "Facility Operations › Plant",
+   "Facility Operations › Culinary",
+   "Facility Operations › Store",
+   "Finance/Banking/Insurance › Trade and Portfolio",
+   "Finance/Banking/Insurance › Financial Planning & Investment",
+   "Finance/Banking/Insurance › Finance",
+   "Finance/Banking/Insurance › Controller",
+   "Finance/Banking/Insurance › Cash Management",
+   "Finance/Banking/Insurance › Risk & Fraud",
+   "Finance/Banking/Insurance › Banking",
+   "Finance/Banking/Insurance › Insurance",
+   "Human Resources and related › Human Resources",
+   "Human Resources and related › Training & Development",
+   "Communications/Public Relations › Communications",
+   "Communications/Public Relations › Media & PR",
+   "Medical & Wellness › Wellness",
+   "Medical & Wellness › Specialist",
+   "Medical & Wellness › Pharmacist",
+   "Medical & Wellness › Patient Care",
+   "Medical & Wellness › Laboratory",
+   "Medical & Wellness › Medical - Generic",
+   "Medical & Wellness › Doctor",
+   "Education / Teaching › Education / Teaching"
+  ]
+ },
+ "eval_date": "2026-08-15"
+}

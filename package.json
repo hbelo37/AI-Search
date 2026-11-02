@@ -1,0 +1,18 @@
+{
+  "name": "ai-search-prototype",
+  "private": true,
+  "version": "1.0.0",
+  "description": "AI Search (NLP to filters) reference prototype + gold-set benchmark. API on Railway, web on Netlify.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node server/src/index.js",
+    "dev": "MOCK_LLM=1 node server/src/index.js",
+    "build:web": "node scripts/build-web.mjs",
+    "postinstall": "node scripts/build-web.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "1.3.0",
+    "express": "5.3.0"
+  }
+}

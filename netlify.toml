@@ -1,0 +1,12 @@
+# Netlify: static frontend. Set RAILWAY_API_URL in Netlify → Site configuration → Environment variables
+# (e.g. https://ai-search-api-production.up.railway.app). The build writes web/_redirects so /api/* is proxied there.
+[build]
+  command = "node scripts/build-web.mjs"
+  publish = "web"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Content-Type-Options = "nosniff"
